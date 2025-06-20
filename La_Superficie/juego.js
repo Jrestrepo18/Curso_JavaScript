@@ -201,6 +201,44 @@ El grupo necesita información. Las rutas están colapsadas, y moverse sin saber
 
 estado()
 
+while(true){
+let option_help = prompt(`
+Medio de transporte
+
+La noche se acerca. Para avanzar rápido deben decidir: improvisar un medio de transporte o confiar en sus propias fuerzas. El tiempo es limitado.
+    Opción A: Reparar una bicicleta
+    Opción B: Ir a pie`).toLowerCase();
+    
+    if(option_help === "a"){
+        console.log(" Avanzas rápido, encuentras mochila con recursos.");
+        mochila.push("medicinas", "bateria");
+        break
+} 
+    else if(option_help === "b"){
+        console.log("Caminas mucho, cansancio general.");
+        vida--;
+        break
+
+}
+    else{
+        console.warn
+
+        ("Opcion no valida, elija una correcta")
+    }
+
+}
+
+estado()
+
+console.log("A pesar de los riesgos, tu grupo ha logrado reunir recursos vitales. En medio del silencio de la ciudad, encuentran una compuerta metálica marcada con un símbolo de evacuación. El mapa encontrado coincide con un acceso a los túneles del metro. La verdadera prueba está por comenzar bajo tierra, donde la oscuridad y los restos del colapso pondrán a prueba su determinación.")
+
+if (vida >= 3 && mochila.length >= 2 && mochila.includes("Mapa")) {
+    console.log("Cumples los requisitos. Puedes ingresar al Túnel del Metro.");
+} else {
+    console.log("No cumples los requisitos. Quedas atrapado en la ciudad. El juego termina.");
+}
+
+
 
 
 
